@@ -7,10 +7,14 @@ with open('texts.csv', 'r') as f:
     reader = csv.reader(f)
     texts = list(reader)
 
+unqtexts = list(set(texts))
+print(unqtexts)
+
 with open('calls.csv', 'r') as f:
     reader = csv.reader(f)
     calls = list(reader)
 
+## print (calls)
 
 """
 TASK 1:

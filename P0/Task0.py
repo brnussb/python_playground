@@ -10,8 +10,6 @@ with open('texts.csv', 'r') as f:
 firsttext = texts[0]
 incoming_number, answering_number, time = firsttext[0], firsttext[1], firsttext[2]
 
-
-print(firsttext)
 print ("First record of texts, {} texts {} at time {}.".format(incoming_number, answering_number, time))
 
 with open('calls.csv', 'r') as f:
@@ -19,9 +17,9 @@ with open('calls.csv', 'r') as f:
     calls = list(reader)
 
 lastcall = calls[-1]
+incoming_number, answering_number, time, during = lastcall[0], lastcall[1], lastcall[2], lastcall[3]
 
-print(lastcall)
-print("Last record of calls, {} calls {} at time {}, lasting {} seconds.".format('incoming number', 'answering number', 'time', 'during'))
+print("Last record of calls, {} calls {} at time {}, lasting {} seconds.".format(incoming_number, answering_number, time, during))
 
 """
 TASK 0:
