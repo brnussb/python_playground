@@ -12,6 +12,7 @@ incoming_number, answering_number, time = firsttext[0], firsttext[1], firsttext[
 
 print ("First record of texts, {} texts {} at time {}.".format(incoming_number, answering_number, time))
 
+
 with open('calls.csv', 'r') as f:
     reader = csv.reader(f)
     calls = list(reader)
